@@ -5,9 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <title>Bands</title>
 </head>
 <body>
-    <h1 id="headtext">J-Rock bands 🤘</h1>
+    <h1 id="headtext">J-Rock bands 🤘 <br> <br> 🧋 </h1>
+
+    <div class="container-fluid" id="contentgrid">
+
+    <span id="bandsrows">
+        <div class="row" id="titlesrow">
+            <div class="col"> <p> 羊文学 <br> <span id="bandname"> Hitsujibungaku </span> </p> </div>
+            <div class="col"> <p> ヨルシカ <br> <span id="bandname"> Yorushika/n-buna </span> </p> </div>
+            <div class="col"> <p> あたらよ <br> <span id="bandname"> Atarayo </span> </p> </div>
+        </div>
+
+        <div class="row" id="imagesrow">
+            <div class="col"> <img src="/data/Hitsujibungaku.jpg" alt="Hitsujibungaku 羊文学"> </div>
+            <div class="col"> <img src="/data/Yorushika.jpg" alt="Yorushika ヨルシカ"> </div>
+            <div class="col"> <img src="/data/Atarayo.jpg" alt="Atarayo あたらよ"> </div>
+        </div>
+
+        <div class="row" id="descriptionsrow">
+            <div class="col"> <p>
+                Hitsujibungaku is a Japanese rock band formed in 2016. 
+                The band consists of vocalist and guitarist Yūsuke, guitarist and vocalist Yūki, bassist and vocalist Yūta, and drummer and vocalist Yūsuke. 
+                The band's name is a portmanteau of the Japanese words for "sheep" (羊, hitsuji) and "literature" (文学, bungaku). 
+                The band's music is a mix of rock and hip hop, with lyrics that are often about sheep and other animals.
+                <br> <a href="https://www.youtube.com/watch?v=qknDI1k39Ic" target="_blank"> Favorite track </a>
+            </p> </div>
+            <div class="col"> <p>
+                Yorushika (ヨルシカ) is a Japanese rock duo founded in 2017 represented by Universal Music Japan. 
+                The group is composed of N-buna, a vocaloid music producer, and Suis, a female vocalist. 
+
+                They are known for their juxtaposition of "passionate" and "upbeat" production and instrumentation fused with heavier lyrical content, 
+                which often explore ideas such as love and human emotion and draw from works of literature including Masuji Ibuse and Jules Verne.
+
+                The name "Yorushika" is taken from a lyric in their song "Kumo to Yūrei" (雲と幽霊): "Yoru shika mō nemurezu ni" 
+                (夜しかもう眠れずに, meaning "I can only sleep at night").
+
+                The eye-designed logo mark is a motif of two moons facing each other and also serves as a clock hand,
+                portraying the time "from 6:00 to night".
+                <br> <a href="https://www.youtube.com/watch?v=PWbRleMGagU" target="_blank"> Favorite track </a>
+            </p> </div>
+            <div class="col"> <p>
+                Atarayo is a four-member female led band that got started in November of 2020 in Tokyo. 
+
+                Derived from the naming scape of “being a night that is so beautiful that its regrettable to be the dawn”, 
+                the band relies on its theme of being “a band that had grew up in the sadness”. 
+
+                Atarayo brings very thought provoking and emotionally driven tracks with vocalist Hitomi. 
+                <br> <a href="https://www.youtube.com/watch?v=zO8yNYEsYTc" target="_blank"> Favorite track </a>
+            </p> </div>
+        </div>
+    </span>
+
+    <span id="formsrows">
+        <div class="row" id="titlerow">
+            <div class="col">
+                <p id="formstitle"> Discover more 👀 </p>
+            </div>
+        </div>
+        <div class="row" id="namerow">
+            <div class="col">
+                Username <input type="text" id="nameinput">
+            </div>
+        </div>
+        <div class="row" id="emailrow">
+            <div class="col">
+                Email <input type="email" id="emailinput">
+            </div>
+        </div>
+        <div class="row" id="genrerow">
+            <div class="col" id="genrerowtitle">
+                Fav genre
+            </div>
+            <div class="col" id="radiobuttons">
+                <div><input type="radio" name="genre" value="jrock" id="jrockradio"> <label for="jrockradio">J-rock </label></div>
+                <div><input type="radio" name="genre" value="krock" id="krockradio"> <label for="krockradio">K-rock</label></div>
+                <div><input type="radio" name="genre" value="crock" id="crockradio"> <label for="crockradio">C-rock</label></div>
+            </div>
+        </div>
+        <div class="row" id="buttonrow">
+            <div class="col">
+                <button type="button" onclick="location.href='https://discord.gg/SHrR3PAF';" class="btn btn-primary" id="submitbutton">Connect me 👻</button>
+            </div>
+        </div>
+    </span>
+
+    </div>
+
 </body>
 </html>
